@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Afficher Tableau 10 éléments</title>
+    <style>
+        body { font-family: sans-serif; }
+        #monTableau { margin-top: 20px; }
+        #monTableau li { padding: 5px; border-bottom: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+    <h2>Liste des 10 éléments</h2>
+    <ul id="monTableau"></ul>
+
+    <script>
+        // 1. Création du tableau de 10 éléments
+        const elements = [
+            "Élément 1", "Élément 2", "Élément 3", "Élément 4", "Élément 5",
+            "Élément 6", "Élément 7", "Élément 8", "Élément 9", "Élément 10"
+        ];
+
+        // 2. Récupération de l'élément HTML où afficher la liste
+        const conteneur = document.getElementById('monTableau');
+
+        // 3. Boucle sur le tableau pour créer des éléments de liste (li)
+        elements.forEach(item => {
+            let li = document.createElement('li');
+            li.textContent = item; // Utilisation de textContent pour la sécurité
+            conteneur.appendChild(li); // Ajout au DOM
+        });
+    </script>
+</body>
+</html>
