@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWITCH_CASE</title>
+</head>
+<body>
+    <h2>EXERCICE PRATIQUE AVEC LE SWITCH_CASE</h2>
+    <SCRIPt>
+        let nombre ;
+        do{
+           nombre =parseInt(prompt("Saisissez un nombre")) ;
+        }while((nombre <1) || (nombre > 12)) ;
+        switch(nombre){
+            case 1 : document.write("JANVIER"+"<br>"); break;
+            case 2 : document.write("FEVRIER"+"<br>");break;
+            case 3 : document.write("MARS"+"<br>");break;
+            case 4 : document.write("AVRIL"+"<br>");break;
+            case 5 : document.write("MAI"+"<br>");break;
+            case 6 : document.write("JUIN"+"<br>");break;
+            case 7 : document.write("JUILLET"+"<br>");break;
+            case 8 : document.write("AOUT"+"<br>");break;
+            case 9 : document.write("SEPTEMBRE"+"<br>");break;
+            case 10 : document.write("OCTOBRE"+"<br>");break;
+            case 11: document.write("NOVEMBRE"+"<br>");break;
+            case 12 : document.write("DECEMBRE"+"<br>");break;
+            default : alert("Erreur veuillez saisir un nombre entre 1 et 12"); break;
+        }
+    </SCRIPt>
+
+    
+</body>
+</html>

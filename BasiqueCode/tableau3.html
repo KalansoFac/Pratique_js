@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcourir un Tableau avec JS</title>
+</head>
+<body>
+    <h3>Exercice pratique : Parcourir les elements d'un tableau</h3><hr>
+    <script>
+        let tab=[];
+        let nombre = parseInt(prompt("Entrez le nombre de prenom : "));
+        for(let i=0 ; i <nombre ; i++){
+            let prenom=prompt("Saisissez un prenom : ");
+            tab.push(prenom);
+        } 
+        if(tab != null ){
+            alert(tab.join("-"));
+        }
+        else{
+            alert("Le tableau est vide ! ");
+        }
+        
+    </script>
+    
+</body>
+</html>
